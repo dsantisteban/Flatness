@@ -102,7 +102,7 @@ header {
 	font-style: italic;
 }
 
-header{
+header, footer{
 	background-color: #1A1720;
 }
 header img{
@@ -114,6 +114,9 @@ nav{
 header nav a{
 	text-align: right;
 	color:white;
+}
+section{
+	background-color: #302531;
 }
 
 .flowers img, .content img, .article img{
