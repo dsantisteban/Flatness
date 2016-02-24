@@ -1,4 +1,4 @@
-/* Inserta tu codigo aqui */
+/* Grid System */
 .col-1 {
 	/* (1 / 12) x 100 */
 	width: 8.333333%;
@@ -59,7 +59,7 @@
 	width: 100%;
 }
 .container {
-	width: 968px;
+	width: 807px;
 	padding-left: 14px; 
 	padding-right: 14px;
 	margin: 0px auto;
@@ -75,55 +75,170 @@
 }
 
 .row:before, .row:after{
-  content: " ";
-  display: table;
+	content: " ";
+	display: table;
 }
 
 .row:after {
-  clear: both;
+	clear: both;
 }
 
 [class*="col-"] {
 	min-height: 7px;
 	float: left;
 }
-
+/*-------------------Aqui empieza-----------------*/
 /*All*/
-
 *{
 	text-decoration: none;
- 	box-sizing: border-box;
-  	margin: 0;
- 	 padding: 0;	
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+body{
+	font-size: 12px;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
 }
 /*Header*/
-header {
-	font-family: 'Open Sans', sans-serif;
+header, 
+.spring .image .row div p:nth-child(2), 
+.flowers .col-4 .box p:nth-child(3),
+.three .col-7 p:nth-child(3){
 	font-style: italic;
 }
-
-header, footer{
+header nav a{
+	color:white;
+}
+header, 
+footer{
 	background-color: #1A1720;
 }
 header img{
-	width: 300px;
+	width: 250px;
 }
 nav{
 	float: right;
 }
 header nav a{
 	text-align: right;
-	color:white;
+	padding: 0% 0% 0% 5%; 
 }
-section{
+header nav{
+	padding: 2% 0%;
+}
+/*Section spring*/
+section, 
+.three .article .search input, 
+.three .article .aboutme p:nth-child(5) i {
 	background-color: #302531;
 }
-
-.flowers img, .content img, .article img{
+.spring .container,  
+.three .container{
+	padding: 3% 14px;
+}
+.spring .image{
+	background: url("../image/image2.jpg") no-repeat;
+	background-position: center;
+	background-position:  0px 10px;
+	background-size: 100%;
+}
+.spring .image .row{
+	padding: 10% 18.5%;			
+}
+.spring .image .row div, 
+.flowers .box,  
+.three .col-7,
+.three .article .search,
+.three .article .aboutme{
+	background-color: #1B1821;
+}
+.spring .image .row div, 
+.three .col-7 p:nth-child(2), 
+.three .col-7 p:nth-child(3){		
+	text-align: center;
+}
+.spring .image .row div{
+	padding: 8% 2% 4%;		
+}
+.spring .image .row div p:nth-child(1){
+	font-size: 70px;
+}
+.spring .image .row div p:nth-child(1), 
+.flowers .col-4 .box p:nth-child(2), 
+.three .col-7 p:nth-child(2), 
+.three .article .aboutme p:nth-child(1){
+	font-family: 'Courgette', cursive;
+	color:#F6BA67;
+	font-weight: bold;
+	text-align: center;
+}
+.spring .image .row div p:nth-child(2){
+	padding: 2% 0%;
+}
+.spring .image .row div p:nth-child(2) span{
+	padding: 0% 2%;
+}
+/*Section Flowers*/
+.flowers img, .three img, .article img{
 	width: 100%;
 }
-
-
+.flowers .box{
+	margin-right: 4%;
+	text-align: center;
+}
+.flowers .col-4 .box p:nth-child(2), 
+.three .col-7 p:nth-child(2), 
+.three .article .aboutme p:nth-child(1){
+	font-size: 15px;
+	padding: 2% 0%;
+}
+.flowers .col-4 .box p:last-child{
+	padding: 0% 0% 5%;
+}
+/*Section three*/
+.three .col-7  p:nth-child(4), 
+.three .col-7 p:nth-child(6){
+	padding: 2% 2.5%;
+}
+.three .article{
+	margin-left: 5%;
+}
+.three .article .search{
+	border-radius: 4px;
+}
+.three .article .search input{
+	margin:5% 10%;		
+	border:0;
+	border-radius: 4px;
+	width: 80%;
+	height: 35px;
+	padding-left: 3%;
+}
+.three .article .aboutme{
+	margin-top:4%;
+}
+.three .article .aboutme p:nth-child(3){
+	text-align: center;
+	font-weight: bold;
+}
+.three .article .aboutme p:nth-child(4),
+.three .article .aboutme p:nth-child(5){
+	padding: 2% 10% 2% 5%;
+}
+.three .article .aboutme p:nth-child(5) i{
+	padding: 3%;
+	border-radius: 100px;
+	margin: 0% 5% 2% 0%;
+}
+/*footer*/
+footer p{
+	text-align: center;
+	padding:3% 0%;
+}
+footer p a{
+	color:#302531;
+}
 
 /* Responsive */
 
