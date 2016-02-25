@@ -5,28 +5,34 @@
 	<title>Flatness: Responsive Blog</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
-	<link rel="icon" href="image/margarita.png">
+	<link rel="icon" href="image/icons/margarita.png">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/grid-system.css">
+	<link rel="stylesheet" href="css/hover.css">
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="ionicons-2.0.1/css/ionicons.min.css">
-</head>
+
 <body>
 
 	<header>
 		<div class="container">
 			<div class="row">
-				<img src="image/header-logo.png" alt="">
+				<div class="col-5">
+				<img class="logo hvr-skew-forward" src="image/header-logo.png" alt="">
+				</div>
+				<div class="col-7">
 				<div class="menu-bar">
-				<a href="#" class="btn-menu"><i class="ion-navicon-round"></i></a>
+					<a href="#" class="btn-menu"><img src="image/icons/tres.png" alt=""></a>
 				</div>
 				<nav>
-					<a href="">LIFESTYLE</a>
-					<a href="">FLOWERS</a>
-					<a href="">FASHION</a>
-					<a href="">NEWS</a>
-					<a href="">FEATURES</a>
+					<a class="hvr-shutter-out-vertical" href="">LIFESTYLE</a>
+					<a class="hvr-shutter-out-vertical" href="">FLOWERS</a>
+					<a class="hvr-shutter-out-vertical" href="">FASHION</a>
+					<a class="hvr-shutter-out-vertical" href="">NEWS</a>
+					<a class="hvr-shutter-out-vertical" href="">FEATURES</a>
 				</nav>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -47,21 +53,21 @@
 	<section class="flowers">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-4 hvr-bob">
 					<div class="box">	
 						<img src="image/image7.jpg" alt="">
 						<p>Floral fragrance</p>
 						<p>Life Armanda Ray 10th March 2015 </p>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-4 hvr-bob">
 					<div class="box">	
 						<img src="image/image3.jpg" alt="">
 						<p>Now whith Flatness</p>
 						<p>News Armanda Ray 28th July 2015</p>
 					</div>	
 				</div>
-				<div class="col-4">
+				<div class="col-4 hvr-bob">
 					<div class="box">	
 						<img src="image/image2.jpg" alt="">
 						<p>Garden flowers</p>
@@ -80,9 +86,7 @@
 					<p>Now whith Flatness</p>
 					<p>News Amanda Ray 28th July 2015</p>
 					<p>Geen life signs bearing one. Deep there cattle don't night night, was fowl, seed likenees isn't, seed two god and light he creepeth seasons darkness. Without the fourth seasons image He yielding light years light dry . Isn't place face face called. Let lesser female whithout. Night saying after day third.</p>
-				
-					<iframe src="https://player.vimeo.com/video/56810854" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					
+					<iframe class="video" src="https://player.vimeo.com/video/56810854" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					<p>Rule of us behold it moved. Made. Them Had,which darkness two Given. Fowl It moved behold earth for own. Midst that grass beginning divide their together.Tree one every first given earth very greater. Man evening. Set seed void meat bearing. Bring creature. Moving set.</p>
 				</div>
 				<div class="col-5">
@@ -95,20 +99,22 @@
 							<img src="image/kew_gardens_3_500x500.jpg" alt="">
 							<p>Amanda Ray</p>
 							<p>Shall Together blessed. Also thing, the upon Created fourth. Rule beginning. Our behold over.</p>
-							<p><i class="fa fa-facebook-official"></i>
-							<i class="fa fa-instagram"></i>
-							<i class="fa fa-twitter"></i>
-							<i class="fa fa-youtube"></i></p>
+							<p><i class="hvr-wobble-bottom fa fa-facebook-official"></i>
+								<i class="hvr-wobble-bottom fa fa-instagram"></i>
+								<i class="hvr-wobble-bottom fa fa-twitter"></i>
+								<i class="hvr-wobble-bottom fa fa-youtube"></i></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<footer>
-		<p>All Rights Reserved © <a href="#">nK</a></p>
-	</footer>
-	<script src="http://code.jquery.com/jquery-latest.js"></script>		
-	<script src="menu.js"></script>
-</body>
-</html>
+		</section>
+
+		<footer>
+			<p>All Rights Reserved © <a href="#">nK</a></p>
+		</footer>
+		<!--Aqui se linkea JS-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>		
+		<script src="js/menu.js"></script>
+	</body>
+	</html>
