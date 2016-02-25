@@ -59,7 +59,7 @@
 	width: 100%;
 }
 .container {
-	width: 807px;
+	width: 60%;
 	padding-left: 14px; 
 	padding-right: 14px;
 	margin: 0px auto;
@@ -107,6 +107,9 @@ header,
 .three .col-7 p:nth-child(3){
 	font-style: italic;
 }
+header .menu-bar{
+	display: none;
+}
 header nav a{
 	color:white;
 }
@@ -115,7 +118,8 @@ footer{
 	background-color: #1A1720;
 }
 header img{
-	width: 250px;
+	width: 200px;
+	float: left;
 }
 nav{
 	float: right;
@@ -135,16 +139,14 @@ section,
 }
 .spring .container,  
 .three .container{
-	padding: 3% 14px;
+	padding: 2% 14px;
 }
 .spring .image{
 	background: url("../image/image2.jpg") no-repeat;
-	background-position: center;
-	background-position:  0px 10px;
-	background-size: 100%;
+	background-size: cover;
 }
 .spring .image .row{
-	padding: 10% 18.5%;			
+	padding: 9% 18.5%;			
 }
 .spring .image .row div, 
 .flowers .box,  
@@ -153,9 +155,13 @@ section,
 .three .article .aboutme{
 	background-color: #1B1821;
 }
-.spring .image .row div, 
+.spring .image .row div,
+.flowers .box, 
 .three .col-7 p:nth-child(2), 
-.three .col-7 p:nth-child(3){		
+.three .col-7 p:nth-child(3), 
+.three .article .aboutme p:nth-child(1),
+.three .article .aboutme p:nth-child(3),
+footer p{		
 	text-align: center;
 }
 .spring .image .row div{
@@ -171,7 +177,6 @@ section,
 	font-family: 'Courgette', cursive;
 	color:#F6BA67;
 	font-weight: bold;
-	text-align: center;
 }
 .spring .image .row div p:nth-child(2){
 	padding: 2% 0%;
@@ -185,7 +190,6 @@ section,
 }
 .flowers .box{
 	margin-right: 4%;
-	text-align: center;
 }
 .flowers .col-4 .box p:nth-child(2), 
 .three .col-7 p:nth-child(2), 
@@ -219,7 +223,6 @@ section,
 	margin-top:4%;
 }
 .three .article .aboutme p:nth-child(3){
-	text-align: center;
 	font-weight: bold;
 }
 .three .article .aboutme p:nth-child(4),
@@ -233,7 +236,6 @@ section,
 }
 /*footer*/
 footer p{
-	text-align: center;
 	padding:3% 0%;
 }
 footer p a{
@@ -242,10 +244,82 @@ footer p a{
 
 /* Responsive */
 
-@media screen and (max-width : 920px) {
-
+@media screen and (max-width : 715px) {
+	header nav a{
+		text-align: right;
+		padding: 0% 0% 0% 2%; 
+		font-size: 10px;
+	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
+	.container{
+		width: 100%;	
+	} 
+	.three .container{
+		padding: 8% 14px;
+	}
+
+	.spring .container{
+		padding: 20% 14px 8%;
+	}
+
+	.three .col-5{
+		display: none;
+	}
+	.flowers .col-4{
+		width: 100%;
+	}
+	.three .col-7{
+		width: 100%;
+
+	}
+	.flowers .box{
+		margin-right: 0%;
+	}
+
+	.spring .image .row{
+		padding: 5%;			
+	}
+	header{
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+	}
+	header nav{
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+		background-color:#302531;
+	}
+	header nav a {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+		padding: 2%;
+		text-align: center;
+		font-size:20px;
+		font-family: 'Courgette', cursive;
+		color:#F6BA67;
+		text-transform: lowercase;
+
+
+	}
+	header .menu-bar {
+		display: block;
+		margin: 2% 1%;
+		float: right;
+	}
+	
+	.menu-bar .btn-menu {
+		display:block;
+		color:white;
+		font-size:30px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
 
 }
